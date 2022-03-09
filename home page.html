@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+.mySlides {display:none;}
+body{
+  background-color: #252a30; margin:10px;
+}
+
+.mySlides{
+  width:100%; height: 500px;
+}
+
+.imgbutton{
+  background-color: gray; opacity: 50;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.active {
+  background-color: #717171;
+}
+
+
+a:hover, a:active {
+  background-color: gray;
+  color: white;
+}
+
+.health{
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pet Community</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="D:\website\Store.html.html">Store |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D:\website\about.html">About us |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D:\website\contact.html">Contact |</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid p-5 my-5 bg-dark text-white">
+  
+  <div class="pictures">
+  <img class="mySlides" src="file:///D:/website/Capture15.PNG">
+  <img class="mySlides" src="file:///D:/website/IMG_20180305_120410.jpg">
+  <img class="mySlides" src="file:///D:/website/pexels-julissa-helmuth-3800470.jpg" >
+  <img class="mySlides" src="file:///D:/website/pexels-barnabas-davoti-8842195.jpg">
+
+  <button  type="button" class="imgbutton" onclick="plusDivs(-1)">&#10094;</button>
+  <button  type="button" class="imgbutton" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+</div>
+
+<div><h2 style="color:whitesmoke; text-align:center;">Pet Community</h2>
+<h5 style="color:whitesmoke; text-align:center;">The Pet Community is a social network for pet owners.</h5><hr style="color:whitesmoke">
+<div>
+<div><h2 style="color:whitesmoke; text-align:center;">Keep Your Pet Healthy</h2><br>
+
+<div class="health" style="color:whitesmoke">
+Whether you have a dog, cat, horse, parakeet, gerbil, bearded dragon, or other fun pet, providing regular, life-long veterinary care is important for keeping your pet and family healthy. Regular veterinary visits are essential to good pet health. Talk to your pet’s veterinarian about how to keep your pet healthy. Provide your pet with a good diet, fresh water, clean bedding, and plenty of exercise. Keep up with your pet’s vaccines, deworming, and flea and tick control. Some pets can carry ticks that can spread serious diseases like Lyme disease and Rocky Mountain spotted fever to people. In areas with plague—including some rural areas in the western US—fleas can be a risk to both animals and their owners.
+</div><br><br>
+</div>
+
+
+<div class="container-fluid p-5 my-5 bg-dark text-white">
+ <div><h2>Details</h2></div> 
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Pet Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Owner Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Gender</label>
+    </div>
+    <div class="col-75">
+      <label>Select gender
+      <select id="country" name="country" placeholder="Select gender">
+        
+        <option value="australia">Male</option>
+        <option value="canada">Female</option>
+        
+      </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Description</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="text-center text-white" style="background-color: #252a30;">
+    <div class="container p-4" style="background-color:#252a30;" >
+        <section class="">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="shadow-1-strong rounded"
+              src="file:///Y:/Web%20tech/website/Y2Mate.is%20-%20Best%20Of%20Cute%20Golden%20Retriever%20Puppies%20Compilation-a6KGPBflhiM-720p-1646477770251.mp4"
+              title="YouTube video"
+              allowfullscreen
+             s></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">PETCOMMUNITY</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+function myFunction() {
+  document.getElementById("myForm").submit();
+}
+</script>
+
+</div>
+</body>
+</html>
+
+
